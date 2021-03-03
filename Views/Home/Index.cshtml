@@ -2,12 +2,17 @@
     ViewData["Title"] = "Home Page";
 }
 
-<link rel="stylesheet" href="site.css">
 
-<h1 style="color:#2f3036 !important;">This is a heading</h1>
+<link href="~/css/site.css" rel="stylesheet" />
+
+<h1 id="bootstrap-overrides" style="height: 35px;width: 125%;color: #0f9d58">Share Price Checker (Yfinance / Google Charts)</h1>
 
 
-<div id="div" class="row" style="padding:20px;">
+<div id="div"
+     class="row" 
+     style="
+        padding: 20px;
+        background-color: #2f3036">
     <div class="col-md-3">
 
         <div class="row form-group form-inline" style="margin-top:5px">
@@ -139,10 +144,10 @@
                                     color: '#0f9d58',
                                     chartArea:
                                     {
-                                        height: '100%', width: '100%', left: 0,
+                                        height: '100%', width: '100%',
                                         backgroundColor: { stroke: '#0f9d58', strokeWidth: 1 },
                                         backgroundColor: { fill: '#2f3036' },
-                                        stroke: '#0f9d58',
+                                        
 
                                     },
                                     hAxis: { baselineColor: '#2f3036', textStyle: { color: 'white' } },

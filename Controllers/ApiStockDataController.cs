@@ -21,7 +21,7 @@ namespace WebApplication4.Controllers
             var startDate = DateTime.Parse(start);
             var endDate = DateTime.Parse(end);
 
-            var hist = await Yahoo.GetHistoricalAsync(ticker, startDate, endDate, p);
+            var hist = await Yahoo.GetHistoricalAsync(ticker, startDate.Date, endDate.Date, p);
 
             List<StockPriceModel> models = new List<StockPriceModel>();
             foreach (var r in hist)

@@ -4,8 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - WebApplication4</title>
+    <link href="./css/site.css" rel="stylesheet" />
 
     <environment include="Development">
+
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
         <link rel="stylesheet" href="~/css/site.css" />
     </environment>
@@ -15,10 +17,13 @@
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
-</head>
-<body style="background-color: #0d0e0f">
+
     
 
+</head>
+<body style="background-color: #2f3036">
+    
+     
     <partial name="_CookieConsentPartial" />
 
     <div class="container body-content">
@@ -26,8 +31,21 @@
         <hr />
         <footer>
             <p>&copy; 2021 - Colin Knipp</p>
+
+            <p>
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px"
+                         src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                         alt="Valid CSS!" />
+                </a>
+            </p>
         </footer>
+
+
     </div>
+
+    <p>
+
 
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
